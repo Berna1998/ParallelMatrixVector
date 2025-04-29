@@ -4,7 +4,7 @@ int main() {
     //Codice seriale per il prodotto matrice per vettore
     int A[3][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
-    int v[3] = {1, 2, 3};
+    int v[3] = {5, 8, 9};
 
     int result[3] = {0, 0, 0};
 
