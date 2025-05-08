@@ -3,6 +3,7 @@
 #include "utils/matrix_io.h"
 #include "utils/convert.h"
 #include "prodotto_seriale/matvec_serial.h"
+#include "prodotto_seriale/blocking.h"
 
 int main() {
     int M, N, nz;
@@ -18,6 +19,7 @@ int main() {
     convert_to_CSR(M, N, nz, I, J, val, &row_ptr, &col_indices, &values);
 
     matvec_serial(M, N, row_ptr, col_indices, values);
+    blocking(M, N, row_ptr, col_indices, values);
 
     free(I);
     free(J);
