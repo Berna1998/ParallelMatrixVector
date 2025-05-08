@@ -5,7 +5,8 @@ SRC = main.c \
       utils/mmio.c \
       utils/matrix_io.c \
       utils/convert.c \
-      prodotto_seriale/matvec_serial.c
+      prodotto_seriale/matvec_serial.c \
+      prodotto_seriale/blocking.c
 
 OBJ = $(SRC:.c=.o)
 EXEC = matvec_serial

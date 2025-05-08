@@ -14,7 +14,7 @@ void matvec_serial(int M, int N, int *row_ptr, int *col_indices, double *values)
         }
     }
 
-    printf("\nRisultato y = A * x:\n");
+    printf("\nRisultato Seriale basic y = A * x:\n");
     for (int i = 0; i < M; i++) {
         printf("%.4f ", y[i]);
     }
